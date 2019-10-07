@@ -1,0 +1,15 @@
+<fieldset>
+    <legend>Share a Youtube movie</legend>
+    <form [formGroup]="formShare">
+        <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile colspan="1"><label>Youtube URL:</label></mat-grid-tile>
+            <mat-grid-tile colspan="2">
+                <mat-form-field>
+                    <input matInput formControlName="url" placeholder="link..." />
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="1"></mat-grid-tile>
+            <mat-grid-tile colspan="2"><button color="primary" type="submit" (click)="formShare.valid && onShare()" mat-raised-button>Share</button></mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</fieldset>

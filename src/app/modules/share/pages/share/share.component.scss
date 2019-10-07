@@ -1,0 +1,14 @@
+$full-width: 100%;
+fieldset{
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+}
+
+button{
+    width: $full-width;
+}
+
+mat-form-field{
+    width: $full-width;
+}

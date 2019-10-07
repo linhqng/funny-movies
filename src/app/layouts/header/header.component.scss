@@ -1,0 +1,17 @@
+
+$font-size:11pt;
+mat-form-field{
+    padding-left: 5px;
+    font-size: $font-size;
+}
+
+mat-form-field::placeholder{
+    opacity: 0.5;
+}
+
+.logout{
+    span{
+        font-size: $font-size;
+        padding: 5px;
+    }
+}

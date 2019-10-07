@@ -1,0 +1,19 @@
+<mat-toolbar class="menubar">
+    <span style="cursor: pointer" (click)="navigateToHome()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>Funny movies
+    </span>
+    <form class="form-login" *ngIf="!isLogin" [formGroup]="formLogin">
+        <mat-form-field>
+            <input matInput placeholder="email" formControlName="username" />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" placeholder="password" formControlName="password" />
+        </mat-form-field>
+        <button mat-stroked-button (click)="formLogin.valid && onLogin()">Login/Register</button>
+    </form>
+    <div class="logout" *ngIf="isLogin">
+        <span>{{'Welcome ' + credential?.credentials?.username}}</span>
+        <button (click)="navigateToShare()" color="primary" mat-raised-button>Share a movie</button>
+        <button mat-button (click)="onLogout()">Logout</button>
+    </div>
+</mat-toolbar>

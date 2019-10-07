@@ -1,0 +1,19 @@
+@import "../variable";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $cl_taupe;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul { 
+  margin-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+}

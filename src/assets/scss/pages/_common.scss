@@ -1,0 +1,32 @@
+@import "../variable";
+
+body {
+    background: $cl_default;
+}
+ 
+app-root{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    app-header{
+        width: $max-width;
+        padding-bottom: 20px;
+        mat-toolbar{
+            box-shadow: 0 4px 2px -2px gray;
+            background: $cl_white_smoke !important;
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.container{
+    background: $cl_white_smoke;
+    width: 100%;
+    height: 100px; 
+}
